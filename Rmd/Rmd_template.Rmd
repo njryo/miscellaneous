@@ -1,0 +1,66 @@
+---
+title: "template"
+#author: "name"
+#date: '`r Sys.Date()`'
+
+output: 
+  html_notebook:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    theme: cosmo
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# Section 1
+
+```{r, message=FALSE}
+library(tidyverse)
+```
+
+```{r, message=FALSE, warning=FALSE}
+# data loading
+# data <- read_csv("data_path"")
+
+# if data is large,
+# as_tibble(data.table::fread("data_path"))
+
+df <- as_tibble(cars)
+```
+
+
+# Section2 {.tabset .tabset-fade .tabset-pills}
+
+Using tabset
+
+## tab1: data type
+
+```{r}
+df %>% 
+  summarise_all(class) %>% 
+  gather(variable, class)
+```
+
+## tab2: missing
+
+```{r}
+colSums(is.na(df))
+```
+
+
+## tab3: plot
+
+fig.heightなどでプロットサイズを調整
+
+```{r, fig.height=4, fig.width=8}
+df %>% 
+  ggplot(mapping = aes(x = speed, y = dist)) +
+  geom_point()
+
+```
