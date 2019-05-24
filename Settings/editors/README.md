@@ -37,7 +37,8 @@ Material Theme UI pluginを導入
 - Size 12
 - Line spacing 1.1
 
-(もっと見やすいのあるかも)
+(PythonだとPython Consoleをよく使うからエディターフォントに合わせた方が見やすそう。  
+IntelliJだともっと見やすい設定が他にあると思う。)
 
 
 
