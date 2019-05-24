@@ -2,6 +2,24 @@
 
 ## IntelliJ, PyCharm共通
 
+### エディターの設定
+
+#### 保存時に最終行に改行を挿入
+
+設定のEditor > GeneralのOther, Ensure line feed ad file end on Saveにチェック。
+
+#### リッチテキストコピーをオフ
+
+設定のEditor > GeneralのRich-text copy, Copy as rich text by defaultのチェックを外す。
+
+#### スペースなどを表示
+
+設定のEditor > General > AppearanceのShow Whitespacesにチェック。
+
+#### 選択文字列を囲む機能
+
+設定のEditor > General > Smart KeysのSurround selection on typing quote or braceにチェック
+
 ### 見た目
 
 Material Theme UI pluginを導入
